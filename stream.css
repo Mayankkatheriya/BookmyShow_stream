@@ -8,6 +8,10 @@
   display: none;
 }
 
+.wi{
+
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -190,7 +194,6 @@ body {
 .section-title h2 {
   word-break: break-word;
   color: rgb(51, 51, 51);
-  font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.17;
@@ -228,10 +231,36 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
+.overflow {
+  overflow-x: scroll;
+}
+.left-right{
+  position: relative;
+  width: 100%;
+}
+.left, .right{
+  position: absolute;
+  top: calc(137.492px);
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left{
+  left: -20px;
+}
+.right{
+  right: -20px;
+}
+
 /* --------------------preview-------------------*/
 
 .preview {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   position: relative;
 }
@@ -279,7 +308,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 100%);
   grid-template-rows: repeat(1, 1fr);
-  grid-auto-flow: column;
+  grid-auto-flow: dense;
   overflow-x: scroll;
 }
 .card {
@@ -399,10 +428,6 @@ body {
   line-height: 1.25;
 }
 /* -------------Free-movies-------------- */
-.overflow {
-  overflow-x: scroll;
-}
-
 .free-movies .container .images {
   grid-template-columns: repeat(18, calc((100% - 128px) / 5));
 }
@@ -564,10 +589,16 @@ body {
   grid-template-columns: repeat(10, calc((100% - 128px) / 5));
 }
 
+.actors .container .left,
+.actors .container .right{
+  top: calc(145.97px);
+}
+
 .actors .container .images img {
   height: calc(331.926px);
   max-height: calc(331.926px);
 }
+
 /*--------------old-hollywood------------*/
 .old-hollywood .section-title {
   display: flex;
