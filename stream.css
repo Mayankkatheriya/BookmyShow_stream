@@ -331,7 +331,6 @@ body {
   width: 100vw;
 }
 
-
 .cards {
   display: grid;
   grid-template-columns: repeat(10, 100%);
@@ -764,7 +763,7 @@ body {
   .right {
     display: none;
   }
-  
+
   .section-title h2 {
     font-size: 18px;
     line-height: 1.33;
@@ -790,17 +789,11 @@ body {
   .container .images img {
     height: calc(122.174px);
   }
-  .section-heading h2{
+  .section-heading h2 {
     font-size: 18px;
     line-height: 1.33;
   }
   .video-library {
-    display: none;
-  }
-  .preview .content {
-    flex-direction: column;
-  }
-  .text {
     display: none;
   }
   .top-margin {
@@ -814,12 +807,12 @@ body {
   }
   .preview .content .image {
     width: 100%;
-    /* height: calc(300px); */
+    height: calc(300px);
   }
   .preview .content img {
     object-fit: fill;
   }
-  .preview .content .details{
+  .preview .content .details {
     margin: 16px 32px 0px 32px;
   }
   .premium .container .images {
@@ -835,8 +828,8 @@ body {
   .free-movies .container .images {
     grid-template-columns: repeat(18, calc((100% - 16px) / 3));
   }
-  
-  .banner{
+
+  .banner {
     height: calc(35.122px);
     border-radius: 20px;
   }
@@ -865,7 +858,7 @@ body {
     grid-template-columns: repeat(3, calc((100% - 16px) / 3));
     grid-auto-flow: row;
   }
-  
+
   .actors .container .images img {
     height: calc(110.917px);
   }
@@ -877,10 +870,10 @@ body {
   }
   .shorts .container .images img {
     height: calc(122.174px);
-   }
+  }
 }
 
-@media screen and (min-width: 320px) and  (max-width: 480px){
+@media screen and (max-width: 480px) {
   .container .images img {
     height: calc(205.607px);
   }
@@ -888,7 +881,10 @@ body {
     height: calc(205.607px);
     max-height: calc(205.607px);
   }
-  .banner{
+  .preview .content {
+    flex-direction: column;
+  }
+  .banner {
     height: calc(57.5122px);
   }
   .offers .container .images img {
@@ -899,17 +895,27 @@ body {
   }
   .shorts .container .images img {
     height: calc(205.607px);
-   }
+  }
 }
-@media screen and (min-width: 481px) and  (max-width: 1024px){
+
+@media screen and (max-width: 780px) {
+  .text {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .container .images img {
     height: calc(330.523px);
+  }
+  .preview .content .image {
+    width: 40%;
+    height: auto;
   }
   .upcoming .container .images img {
     height: calc(330.523px);
     max-height: calc(330.523px);
   }
-  .banner{
+  .banner {
     height: calc(91.0244px);
   }
   .offers .container .images img {
@@ -920,5 +926,5 @@ body {
   }
   .shorts .container .images img {
     height: calc(330.523px);
-   }
+  }
 }
