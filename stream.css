@@ -8,14 +8,13 @@
   display: none;
 }
 
-.wi{
-
-}
-
 html {
   scroll-behavior: smooth;
 }
-
+.main-container {
+  width: 100vw;
+  height: 100%;
+}
 :root {
   font-family: "Roboto", sans-serif;
   --lightgray-color: rgb(51, 53, 69);
@@ -221,24 +220,24 @@ body {
   grid-auto-flow: column;
   gap: 8px 32px;
 }
-.container .images div {
+/* .container .images div {
   height: 100%;
-}
+} */
 
 .container .images img {
   width: 100%;
-
   border-radius: 8px;
   cursor: pointer;
 }
 .overflow {
   overflow-x: scroll;
 }
-.left-right{
+.left-right {
   position: relative;
   width: 100%;
 }
-.left, .right{
+.left,
+.right {
   position: absolute;
   top: calc(137.492px);
   cursor: pointer;
@@ -250,10 +249,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.left{
+.left {
   left: -20px;
 }
-.right{
+.right {
   right: -20px;
 }
 
@@ -264,6 +263,29 @@ body {
   overflow: hidden;
   position: relative;
 }
+
+.preview .left,
+.preview .right {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.preview .left {
+  left: 0;
+  border-radius: 0 6px 6px 0;
+}
+.preview .right {
+  right: 0;
+  border-radius: 6px 0px 0px 6px;
+}
+
 /*----------------video-library------------------*/
 .video-library {
   padding: 0 18px;
@@ -304,6 +326,12 @@ body {
   line-height: 1.25;
 }
 /*-----------------------------------*/
+
+.item {
+  width: 100vw;
+}
+
+
 .cards {
   display: grid;
   grid-template-columns: repeat(10, 100%);
@@ -320,6 +348,7 @@ body {
 }
 .first {
   background-image: url("./Stream_Assets/preview/bg-1.avif");
+  width: 100vw;
 }
 .second {
   background-image: url("./Stream_Assets/preview/bg-2.avif");
@@ -507,6 +536,7 @@ body {
   padding: 0px 16px;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 16px;
 }
 .filters a {
   text-decoration: none;
@@ -515,17 +545,14 @@ body {
   margin-right: 8px;
 }
 .filters a div {
-  background-color: rgb(248, 68, 100);
   white-space: nowrap;
   color: rgb(255, 255, 255);
   flex-grow: 1;
   text-align: center;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.43;
   overflow: hidden;
-  text-overflow: ellipsis;
   position: relative;
   height: 100%;
   background-color: rgb(248, 68, 100);
@@ -590,7 +617,7 @@ body {
 }
 
 .actors .container .left,
-.actors .container .right{
+.actors .container .right {
   top: calc(145.97px);
 }
 
@@ -728,4 +755,170 @@ body {
   text-decoration: none;
   color: rgb(220, 53, 88);
   font-weight: 400;
+}
+@media screen and (max-width: 1023px) {
+  header {
+    display: none;
+  }
+  .left,
+  .right {
+    display: none;
+  }
+  
+  .section-title h2 {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .section-title p {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .pre-tag p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.43;
+  }
+  .container {
+    padding: 16px 0;
+  }
+  .container .images {
+    grid-template-columns: repeat(20, calc((100% - 16px) / 3));
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px 8px;
+    overflow-x: scroll;
+  }
+  .container .images img {
+    height: calc(122.174px);
+  }
+  .section-heading h2{
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .video-library {
+    display: none;
+  }
+  .preview .content {
+    flex-direction: column;
+  }
+  .text {
+    display: none;
+  }
+  .top-margin {
+    margin: 8px 0 0;
+  }
+  .preview .content .details h1 {
+    margin: 16px 0px 0px;
+    word-break: break-word;
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .preview .content .image {
+    width: 100%;
+    /* height: calc(300px); */
+  }
+  .preview .content img {
+    object-fit: fill;
+  }
+  .preview .content .details{
+    margin: 16px 32px 0px 32px;
+  }
+  .premium .container .images {
+    grid-template-columns: repeat(5, calc((100% - 16px) / 3));
+  }
+  .upcoming .container .images {
+    grid-template-columns: repeat(2, calc((100% - 16px) / 3));
+  }
+  .upcoming .container .images img {
+    height: calc(122.174px);
+    max-height: calc(122.174px);
+  }
+  .free-movies .container .images {
+    grid-template-columns: repeat(18, calc((100% - 16px) / 3));
+  }
+  
+  .banner{
+    height: calc(35.122px);
+    border-radius: 20px;
+  }
+  .horror-fest .container .images {
+    grid-template-columns: repeat(12, calc((100% - 16px) / 3));
+  }
+  .collector-edition .container .images {
+    grid-template-columns: repeat(19, calc((100% - 16px) / 3));
+  }
+  .itv .container .images {
+    grid-template-columns: repeat(12, calc((100% - 16px) / 3));
+  }
+  .bbc .container .images {
+    grid-template-columns: repeat(13, calc((100% - 16px) / 3));
+  }
+  .offers .container .images {
+    grid-template-columns: repeat(3, calc((100% - 16px) / 3));
+  }
+  .offers .container .images img {
+    height: calc(83.1875px);
+  }
+  .on-discount .container .images {
+    grid-template-columns: repeat(10, calc((100% - 16px) / 3));
+  }
+  .actors .container .images {
+    grid-template-columns: repeat(3, calc((100% - 16px) / 3));
+    grid-auto-flow: row;
+  }
+  
+  .actors .container .images img {
+    height: calc(110.917px);
+  }
+  .old-bollywood .container .images {
+    grid-template-columns: repeat(9, calc((100% - 16px) / 3));
+  }
+  .shorts .container .images {
+    grid-template-columns: repeat(4, calc((100% - 16px) / 3));
+  }
+  .shorts .container .images img {
+    height: calc(122.174px);
+   }
+}
+
+@media screen and (min-width: 320px) and  (max-width: 480px){
+  .container .images img {
+    height: calc(205.607px);
+  }
+  .upcoming .container .images img {
+    height: calc(205.607px);
+    max-height: calc(205.607px);
+  }
+  .banner{
+    height: calc(57.5122px);
+  }
+  .offers .container .images img {
+    height: calc(144.391px);
+  }
+  .actors .container .images img {
+    height: calc(192.521px);
+  }
+  .shorts .container .images img {
+    height: calc(205.607px);
+   }
+}
+@media screen and (min-width: 481px) and  (max-width: 1024px){
+  .container .images img {
+    height: calc(330.523px);
+  }
+  .upcoming .container .images img {
+    height: calc(330.523px);
+    max-height: calc(330.523px);
+  }
+  .banner{
+    height: calc(91.0244px);
+  }
+  .offers .container .images img {
+    height: calc(236px);
+  }
+  .actors .container .images img {
+    height: calc(314.667px);
+  }
+  .shorts .container .images img {
+    height: calc(330.523px);
+   }
 }
