@@ -26,80 +26,81 @@
                 <img src="./Stream_Assets/Header/logo.png" alt="logo" />
                 <div class="search_bar">
                   <i class="fa-solid fa-magnifying-glass"></i>
-                  <span
-                    >Search for Movies,Events,Plays,Sports and Activities</span
-                  >
+                  <input placeholder="Search for Movies,Events,Plays,Sports and Activities">
+                  </input>
                 </div>
+                
               </div>
-  
+    
               <form>
-                <span>Mumbai<i class="fa-solid fa-caret-down"></i></span>
-                <button>Sign in</button>
-                <i class="fa-solid fa-bars"></i>
+                  <select>
+                    <option value="" selected>Ahmedabad</option>
+                    <option value="">Delhi</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Hyderabad</option>
+                    <option value="">Bengaluru</option>
+                    <option value="">Pune</option>
+                  </select>
+                  <button>Sign in</button>
+                  <i class="fa-solid fa-bars"></i>
               </form>
-  
+    
               <!-- for responsive  -->
-              <div class="nav_1_resp">
-                <div class="nav1_l">
-                  <h2>It All Starts Here!</h2>
-                  <span>Ahmedabad ›</span>
-                </div>
-                <form>
-                  <button>Use App</button>
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
+              
+            </div>
+    
+            <div class="nav_1_resp">
+              <div class="nav1_l">
+                <h2>It All Starts Here!</h2>
+                <span>Ahmedabad ›</span>
               </div>
+              <form>
+                <button>Use App</button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
             </div>
           </div>
-  
           <!-- nav section-2 -->
           <div class="nav_2">
             <div class="nav_width">
               <ul class="nav_2_sub1">
                 <li><a href="">Movies</a></li>
-                <li><a class="white" href="">Stream</a></li>
+                <li><a href="" id="white-text">Stream</a></li>
                 <li><a href="">Events</a></li>
                 <li><a href="">Plays</a></li>
                 <li><a href="">Sports</a></li>
                 <li><a href="">Activities</a></li>
                 <li><a href="">Buzz</a></li>
-                <li>
-                  <a href=""
-                    ><img src="./Stream_Assets/Header/cwc23.avif" /><sup
-                      >NEW</sup
-                    ></a
-                  >
+                <li><a href=""><img src="./Stream_Assets/Header/cwc23.avif" alt="iciccricket"><sup>NEW</sup></a>
                 </li>
               </ul>
               <ul class="nav_2_sub2">
-                <li>
-                  <a href="https://in.bookmyshow.com/list-your-show/"
-                    >ListYourShow</a
-                  >
-                </li>
-                <li>
-                  <a href="https://in.bookmyshow.com/voucher">Corporates</a>
-                </li>
+                <li><a href="https://in.bookmyshow.com/list-your-show/">ListYourShow</a></li>
+                <li><a href="https://in.bookmyshow.com/voucher">Corporates</a></li>
                 <li><a href="https://in.bookmyshow.com/offers">Offers</a></li>
-                <li>
-                  <a href="https://in.bookmyshow.com/giftcards">Gift Cards</a>
-                </li>
+                <li><a href="https://in.bookmyshow.com/giftcards">Gift Cards</a></li>
               </ul>
-              <div class="nav2_resp">
-                <img src="./Navbar/img1.png" alt="nav1" />
-                <img src="./Navbar/img2.png" alt="nav2" />
-                <img src="./Navbar/img3.png" alt="nav3" />
-                <img src="./Navbar/img4.png" alt="nav4" />
-                <img src="./Navbar/img5.png" alt="nav5" />
-                <img src="./Navbar/img6.png" alt="nav6" />
-                <img src="./Navbar/img7.png" alt="nav7" />
-              </div>
             </div>
-          </div>
+          </div>>
         </nav>
       </header>
+      <!--------------------------nav-fix--------------------------->
+      <div class="navbar">
+        <div class="nav-fix">
+          <div class="back-button">
+            <i class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+          </div>
+          <div class="stream-logo">
+            <img src="./Stream_Assets/nav-fixed/stream-logo-202101050337.avif" alt="logo">
+          </div>
+          <div class="nav-fix_icons">
+            <img src="./Stream_Assets/nav-fixed/video-player-icon-202108051140.avif" alt="video-logo">
+            <img src="./Stream_Assets/nav-fixed/search-icon.png" alt="">
+          </div>
+        </div>
+      </div>
       <main>
-        <!------------------------preview-------------------------->
+        <!------------------------preview--------------------------->
         <section class="preview">
           <div class="video-library">
             <div class="col-1">
@@ -442,7 +443,7 @@
             </div>
           </div>
         </section>
-        <!------------------------premium-------------------------->
+        <!------------------------premium--------------------------->
         <section class="premium" id="top-movies">
           <div class="container">
             <div class="section-title">
@@ -482,7 +483,7 @@
             </div>
           </div>
         </section>
-        <!------------------------upcoming------------------------->
+        <!------------------------upcoming-------------------------->
         <section class="upcoming">
           <div class="container">
             <div class="section-title">
@@ -510,7 +511,7 @@
             </div>
           </div>
         </section>
-        <!-----------------------Free-movies----------------------->
+        <!-----------------------Free-movies------------------------>
         <section class="free-movies">
           <div class="container">
             <div class="section-title">
@@ -1257,7 +1258,7 @@
             
           </div>
         </section>
-        <!----------------------languages------------------------->
+        <!-----------------------languages-------------------------->
         <section class="languages">
           <div class="container">
             <div class="section-heading">
@@ -1279,7 +1280,7 @@
             </div>
           </div>
         </section>
-        <!------------------------offers-------------------------->
+        <!------------------------offers---------------------------->
         <section class="offers">
           <div class="container">
             <div class="section-title">
@@ -1298,7 +1299,7 @@
             </div>
           </div>
         </section>
-        <!----------------------Indian-cinema--------------------->
+        <!----------------------Indian-cinema---------------------->
         <section class="Indian-cinema">
           <div class="container">
             <div class="section-title">
@@ -1374,7 +1375,7 @@
             
           </div>
         </section>
-        <!-----------------------on-discount----------------------->
+        <!---------------------on-discount------------------------->
         <section class="on-discount">
           <div class="container">
             <div class="section-title">
@@ -1420,7 +1421,7 @@
             
           </div>
         </section>
-        <!----------------------your-language--------------------->
+        <!----------------------your-language---------------------->
         <section class="your-language">
           <div class="container">
             <div class="section-title">
@@ -1496,7 +1497,7 @@
             
           </div>
         </section>
-        <!------------------------genre--------------------------->
+        <!------------------------genre---------------------------->
         <section class="genre">
           <div class="container">
             <div class="section-heading">
@@ -1518,7 +1519,7 @@
             </div>
           </div>
         </section>
-        <!------------------------actors-------------------------->
+        <!------------------------actors--------------------------->
         <section class="actors">
           <div class="container">
             <div class="left-right">
@@ -1559,7 +1560,7 @@
             </div>
           </div>
         </section>
-        <!----------------------old-hollywood--------------------->
+        <!----------------------old-hollywood---------------------->
         <section class="old-hollywood">
           <div class="container">
             <div class="section-title">
@@ -1634,7 +1635,7 @@
             </div>
           </div>
         </section>
-        <!-----------------------TV-series------------------------>
+        <!-----------------------TV-series-------------------------->
         <section class="TV-series" id="tv-series">
           <div class="container">
             <div class="section-title">
@@ -1712,7 +1713,7 @@
             </div>
           </div>
         </section>
-        <!----------------------old-bollywood--------------------->
+        <!----------------------old-bollywood----------------------->
         <section class="old-bollywood">
           <div class="container">
             <div class="section-title">
@@ -1753,7 +1754,7 @@
             </div>
           </div>
         </section>
-        <!--------------------------action------------------------>
+        <!--------------------------action-------------------------->
         <section class="action">
           <div class="container">
             <div class="section-title">
@@ -1828,7 +1829,7 @@
             </div>
           </div>
         </section>
-        <!------------------------shorts-------------------------->
+        <!------------------------shorts--------------------------->
         <section class="shorts">
           <div class="container">
             <div class="section-title">
@@ -1850,7 +1851,7 @@
             </div>
           </div>
         </section>
-        <!---------------------collections------------------------>
+        <!---------------------collections------------------------->
         <section class="collections">
           <div class="container">
             <div class="section-heading">
