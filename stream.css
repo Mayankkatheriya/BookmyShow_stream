@@ -1287,7 +1287,6 @@ footer a:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
   border-top: 1px solid rgb(238, 238, 238);
   padding:2rem;
-  visibility: hidden;
 }
 .dibya-footer-media-inside-container {
   width: 100%;
@@ -1303,6 +1302,7 @@ footer a:hover {
   padding:2rem;
   background-color: var(--white-color);
 }
+
 .dibya-all-div img {
 
   display: flex;
@@ -1342,10 +1342,6 @@ footer a:hover {
 
   .navbar{
     display: block;
-  }
-
-  .dibya-footer-media{
-    visibility: visible;
   }
   .left,
   .right {
@@ -1519,5 +1515,15 @@ footer a:hover {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .dibya-hr{
       width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .dibya-footer-media {
+    display: none;
+  }
+  .dibya-footer-media-inside-container {
+    display: none;
   }
 }
