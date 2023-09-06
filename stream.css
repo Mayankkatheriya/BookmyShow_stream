@@ -1320,13 +1320,12 @@ footer a:hover {
   justify-content: center;
   text-align: center;
   flex-wrap: nowrap;
-}
-.dibya-all-div a{
   font-size: 0.8rem;
   color: #dc3543;
   font-weight: 400;
   text-decoration: none;
 }
+
 .dibya-all-div div {
   width: 50px;
 }
